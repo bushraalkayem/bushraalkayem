@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MySellingApplication</string>
+    <string name="action_delete">delete all</string>
+    <string name="ProductName">Product Name :</string>
+    <string name="Price"> Price :</string>
+    <string name="Quantity">Quantity :</string>
+    <string name="SupplierName">Supplier Name :</string>
+    <string name="Supplierphone">Supplier Phone Number :</string>
+    <string name="SupplierEmail">Supplier Email :</string>
+    <string name="ProductName1">Product Name</string>
+    <string name="Price1"> Price</string>
+    <string name="Quantity1">Quantity</string>
+    <string name="SupplierName1">Supplier Name</string>
+    <string name="SupplierEmail1">Supplier Email</string>
+    <string name="Supplierphone1">Supplier Phone Number</string>
+
+
+</resources>

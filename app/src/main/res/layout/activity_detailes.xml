@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.mysellingapplication.DetailesActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/add_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorAccent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/delete_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorAccent"
+                android:padding="3dp"
+                android:src="@drawable/ic_delete_button" />
+
+            <ImageView
+                android:id="@+id/edit_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/delete_details"
+                android:background="@color/colorAccent"
+                android:padding="6dp"
+                android:src="@drawable/ic_edit"
+
+                />
+
+            <ImageView
+                android:id="@+id/arrow_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@color/colorAccent"
+                android:padding="6dp"
+                android:src="@drawable/ic_left_arrow"
+
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/product_name_detail_text_view"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ellipsize="marquee"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="Product Name"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/supplier_information_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Supplier Information"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/supplier_name_detail_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/supplier_information_text_view"
+        android:layout_margin="5dp"
+        android:ellipsize="marquee"
+        android:fontFamily="sans-serif-light"
+        android:singleLine="true"
+        android:text="Supplier Name" />
+
+    <TextView
+        android:id="@+id/supplier_email_detail_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/supplier_name_detail_text_view"
+        android:layout_margin="5dp"
+        android:ellipsize="marquee"
+        android:fontFamily="sans-serif-light"
+        android:singleLine="true"
+        android:text="Supplier Email" />
+
+    <TextView
+        android:id="@+id/supplier_phone_number_detail_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/supplier_email_detail_text_view"
+        android:layout_margin="5dp"
+        android:ellipsize="marquee"
+        android:fontFamily="sans-serif-light"
+        android:singleLine="true"
+        android:text="Supplier Phone" />
+
+    <TextView
+        android:id="@+id/price_detail_text_view"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/supplier_edit_layout"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Price"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/inrease_detail_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@color/colorAccent"
+            android:text="+"
+
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <EditText
+
+            android:id="@+id/quantity_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/inrease_detail_button"
+            android:fontFamily="sans-serif-light"
+            android:inputType="number"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/decrease_detail_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/quantity_edit_text"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/detailes_call"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="150dp"
+            android:background="@color/green"
+            android:src="@drawable/ic_phone_call" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

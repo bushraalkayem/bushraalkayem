@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.mysellingapplication.EditActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/add_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorAccent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/checked_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorAccent"
+                android:src="@drawable/ic_checked"
+
+
+                />
+
+            <ImageView
+                android:id="@+id/delete_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/checked_edit"
+                android:background="@color/colorAccent"
+                android:src="@drawable/ic_delete_button"
+
+                />
+
+            <ImageView
+                android:id="@+id/arrow_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@color/colorAccent"
+                android:padding="6dp"
+                android:src="@drawable/ic_left_arrow" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="4dp"
+        android:paddingLeft="4dp"
+        android:text="@string/ProductName"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/text_name1_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="@string/ProductName1"
+
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="4dp"
+        android:paddingLeft="4dp"
+        android:text="@string/Price"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/text_price1_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="@string/Price1"
+        android:inputType="number"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="4dp"
+        android:paddingLeft="4dp"
+        android:text="@string/SupplierName"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/text_Supplier_Name1_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+
+        android:hint="@string/SupplierName1"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="4dp"
+        android:paddingLeft="4dp"
+        android:text="@string/SupplierEmail"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/text_email1_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+
+        android:hint="@string/SupplierEmail1"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="4dp"
+        android:paddingLeft="4dp"
+        android:text="@string/Supplierphone"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/phone_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="@string/Supplierphone1"
+        android:inputType="number"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="4dp"
+        android:paddingLeft="4dp"
+        android:text="@string/Quantity"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/increase_edit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorAccent"
+            android:text="+" />
+
+
+        <EditText
+            android:id="@+id/text_quantity_tow_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="@string/Quantity1"
+
+            android:inputType="number"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp" />
+
+        <Button
+            android:id="@+id/decrease_edit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorAccent"
+            android:text="-" />
+
+        <ImageView
+            android:id="@+id/detailes_call_edit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="150dp"
+            android:background="@color/green"
+            android:src="@drawable/ic_phone_call" />
+    </LinearLayout>
+
+
+</LinearLayout>
